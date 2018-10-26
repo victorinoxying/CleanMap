@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<link rel="stylesheet" type="text/css" href="CleanMap.css">
+    	<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript" src="CleanMap.js"></script>
+    	<title>CleanMap</title>
+    </head>
+    <body>
+    	<div id = "main">
+    		<ul id="menu">
+  			<li><a class="active">menu</a></li>
+  			<li><a class="move" onclick="go()" >restart</a></li>
+  			<li><a onclick="showData()">data</a></li>
+  			<li><a onclick="showHelp()">help</a></li>
+			</ul>
+			<ul id="level">
+				<li>------Settings------</li>
+				<br>
+				<li>Size: 
+				<select onchange="go()" id="GameSize" >
+  				<option value="5">5x5</option>
+  				<option value="6">6x6</option>
+  				<option value="7">7x7</option>
+				<option value="8">8x8</option>
+				<option value="9">9x9</option>
+				<option value="10">10x10</option>
+				<option value="20">don't click</option>
+				<option value="2">i told you</option>
+  			</select>
+			</li><br>
+			<li>Level: 
+				<select onchange="go()" id="GameLevel">
+				<option value="3">very easy</option>
+				<option value="5">very nomal</option>
+				<option value="10">hard</option>
+			</select></li><br>
+		</ul>
+
+    	<div id="play_area"></div>
+    	<ul id="pannel">
+    		<li id="step"><p>Swap Times: 0</p></li>
+    		<li id="score"><p>Score: 0</p></li>
+			<li id="time"><p>Time: 60</p></li>
+			<li id="help"><p>this is a map clean game<br>
+				powered by airvendor张玮华<br>copyright: airvendor<br>tested: victorinox<br>
+				swap two adjacent grid<br>
+				when tree girds in a line, they will be cleaned<br>
+				when time up, you will gain your score
+    			</p></li>
+			<li><img id="img1" src="img/1.png" alt="1" />
+				<img id="img2" src="img/2.png" alt="2" />
+				<img id="img3" src="img/3.png" alt="3" />
+				<img id="img4" src="img/4.png" alt="4" />
+				<img id="img5" src="img/5.png" alt="5" />
+				<img id="img6" src="img/6.png" alt="6" />
+				<img id="img7" src="img/7.png" alt="7" />
+				<img id="img8" src="img/8.png" alt="8" />
+				<img id="img9" src="img/9.png" alt="9" />
+				<img id="img10" src="img/10.png" alt="10" />
+			</li>
+
+    	</ul>
+    	</div>
+      
+    </body>
+</html>
